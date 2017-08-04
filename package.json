@@ -1,24 +1,22 @@
 {
-  
-"name": "tariandtaiym",
- 
-"version": "1.0.0",
-  
-"description": "app for sales",
-  
-"main": "index.js",
-  
-"scripts": {
-    
-"test": "echo \"Error: no test specified\" && exit 1"
-,
-"start": "nodemon server.js"},
-"respository":{
-"type":"git",
-"url":"https://github.com/MitaKulkarni/Tari-Taiym.git"},
-  
-"author": "Mita",
-  
-"license": "ISC"
-
+  "name": "tariandtaiym",
+  "version": "1.0.0",
+  "description": "app for sales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/MitaKulkarni/TariTaiymBackend"
+  },
+  "author": "Mita",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
