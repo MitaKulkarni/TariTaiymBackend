@@ -4,12 +4,12 @@ module.exports = function(app) {
 
 
   // menuList Routes
-  app.route('/foodMenu')
+  app.route('/foodmenu')
     .get(menuList.list_all_items)
     .post(menuList.create_a_item);
 
 
-  app.route('/foodMenu/:itemId')
+  app.route('/foodmenu/:itemId')
     .get(menuList.find_item)
     .put(menuList.update_item)
     .delete(menuList.delete_item);
