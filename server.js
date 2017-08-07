@@ -6,7 +6,7 @@ var express = require('express'),
   bodyParser = require('body-parser');
   
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://Mita:mita2017@ds135983.mlab.com:35983/heroku_k206kh0q', {
+mongoose.connect('mongodb://Mita:mita2017@ds157040.mlab.com:57040/heroku_59jwr7vq', {
   useMongoClient: true
 });
 
