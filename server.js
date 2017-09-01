@@ -14,10 +14,10 @@ mongoose.connect('mongodb://Mita:mita2017@ds157040.mlab.com:57040/heroku_59jwr7v
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var foodMenuroutes = require('./api/routes/foodMenuRoutes');
+var foodMenuroutes = require('./api/routes/FoodMenuRoutes');
 foodMenuroutes(app);
 
-var invoicesRoutes = require('./api/routes/invoicesRoutes');
+var invoicesRoutes = require('./api/routes/InvoicesRoutes');
 invoicesRoutes(app);
 
 app.listen(port, function(){
