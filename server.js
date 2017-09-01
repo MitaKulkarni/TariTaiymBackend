@@ -3,6 +3,7 @@ var express = require('express'),
   port = process.env.PORT || 3000,
   mongoose = require('mongoose'),
   FoodMenu = require('./api/models/FoodMenuModel'),
+  Invoices = require('./api/models/InvoiceDetailsModel'),
   bodyParser = require('body-parser');
   
 mongoose.Promise = global.Promise;
@@ -13,8 +14,11 @@ mongoose.connect('mongodb://Mita:mita2017@ds157040.mlab.com:57040/heroku_59jwr7v
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var routes = require('./api/routes');
-routes(app);
+var foodMenuroutes = require('./api/routes/foodMenuRoutes');
+foodMenuroutes(app);
+
+var invoicesRoutes = require('./api/routes/invoicesRoutes');
+invoicesRoutes(app);
 
 app.listen(port, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
