@@ -13,7 +13,7 @@ mongoose.connect('mongodb://Mita:mita2017@ds157040.mlab.com:57040/heroku_59jwr7v
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var routes = require('./api/routes/foodMenuRoutes');
+var routes = require('./api/routes');
 routes(app);
 
 app.listen(port, function(){
